@@ -69,3 +69,31 @@ print("Training Score of  SVM:",score_svc)
 out_svc = svc.predict(X_test)  
 submission=pd.DataFrame({"PassengerId":idx,"Survived":out_rfc})
 submission.to_csv('newsub.csv', index=False)
+
+
+          Embarked
+#count      889
+#unique       3
+#top          S
+#freq        644
+----------------------
+ 
+#count     891
+#unique      3
+#top         S
+#freq      646
+
+
+#Index(['Supervised','Pclass','Sex','Age','SibSp','Parch','Fare','Embraced'],
+       dtype='object')
+
+#Index(['PassengerID','Pclass','Sex','Age','SibSp','Parch','Fare','Embraced'],
+       dtype='object')
+
+#((891,7),(891),(418,7),(418,))
+
+#Training Score of Logistic Regression: 0.8002244668911336
+
+#Training Score of RandomForestClassifier: 0.97979797979797978
+#Training  Score of KNeighborsClassifier:0.8105432458976534546
+#Training Score of SVM: 0.64567893456789345
